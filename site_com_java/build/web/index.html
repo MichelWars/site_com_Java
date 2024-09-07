@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+
+
+<html lang="pt-br"> <!--Trecho do código em html dentro dessas tags,usar lang=”PT-BR” dentro da tag <html> para definir idioma -->
+    <head><!--Cabeçalho da página -->
+        <title>Meu Site</title><!-- -->
+        <meta charset="UTF-8"><!--Define o padrão de escrita para ask2 (idiomas latinos com acentuação)-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="configura.css"><!-- aplica as configurações css criadas no arquivo descrito na tag(não precisa fechar / tag link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    </head>
+    <body><!-- -->
+        <header><!--Cabeçalho do corpo -->
+            <div><h1>Uninove</h1></div><!--Titulo -->
+        </header>
+        <nav><!--Barra/container/caixa de navegação -->
+            <div class="menu">
+                <button class="botao">Cursos</button><!--cria um botao para armazenar sub menu -->
+                <div class="submenu">
+                    <a href="cadcur.html" target="centro">Cadastro de Cursos</a><!--Incluir "botões com link" -->
+                    <a href="altcur.html" target="centro">Alteração de Cursos</a>
+                    <a href="ControleCursos?flag=listar" target="centro">Listagem de Cursos</a>
+                    <a href="exccur.html" target="centro">Apagar</a>
+                    <a href="concur.html" target="centro">Consulta de Cursos</a>
+                </div>
+            </div>
+            <div class="menu">
+                <button class="botao">Alunos</button>
+                <div class="submenu">
+                    <a href="boletim.html" target="centro">Boletim</a>
+                    <a href="financeiro.html" target="centro">Financeiro</a>
+                    <a href="suporte.html" target="centro">Suporte</a>
+                </div>
+            </div>
+        </nav>
+        <main><!--Caixa Principal -->
+            <iframe src="abertura.html" name="centro"></iframe><!--criar um conteudo variavel dentro de um container-->
+        </main>
+        <footer>Rodapé</footer><!-- Rodapé da pagina -->
+
+    </body>
+</html>

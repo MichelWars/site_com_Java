@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadastro de Cursos</title>
+        <meta charset="ISO-8859-1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="formulario.css">
+    </head>
+    <body>
+        <form method="post" action="ControleCursos?flag=cadastro" autocomplete="off"> <!-- metodo como as informações seram enviadas ao servidor -->
+            <p>
+                <label for="cod">Codigo: *</label> <!-- rotulo,  valor colocado no for"" conecta o label ao input-->
+                <input id="cod" type="text" name="codigo" size="5" maxlength="5" required> <!-- required= campo obrigatorio, size = tamanho da caixa, maxlength=maximo de caracteres, Caixa de texto, valor colocado no id"" conecta o input ao label -->
+            </p>
+            
+            <p>
+                <label for="n">Nome:  *</label> <!-- rotulo,  valor colocado no for"" conecta o label ao input-->
+                <input id="n" type="text" name="nome" size="50" maxlength="50" required> <!-- Caixa de texto, valor colocado no id"" conecta o input ao label -->
+            </p>
+            <p>
+                <label for="d">Duração:</label> <!-- rotulo,  valor colocado no for"" conecta o label ao input-->
+                <input id="d" type="text" name="duracao" size="15" maxlength="15"> <!-- Caixa de texto, valor colocado no id"" conecta o input ao label -->
+            </p>
+            <p>
+                <input type="submit" value="Salvar">
+            </p>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+header{/* Efeitos do cabeçalho*/
+    width: 100%;/* Largura em percentual da pagina*/
+    background-color: black;/*cor de fundo, pode se definir em nome da cor em ingles, codigo rgd(,,) ou codigo hexadecimal */
+    color: white;/*Cor do texto */
+    padding-left: 5%;/*Espaço entre o texto e a borda esquerda definido em pixels ou percentual*/
+    box-sizing: border-box;/* impede que o tamnho da caixa mude quando se defide espaços nas bordas*/
+    font-family: 'Pacifico', arial; /* Aplica fonte importada */
+    font-family: 'Pacifico', arial;
+    font-size:30px
+
+}
+nav{/*Efeitos da caixa de navegação */
+    width: 100%;
+    background-color: #333333;
+    padding: 10px;/*define espaço entre o texto e as 3 bordas(left,top,bottom) */
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+    /*display: flex;/*cria um display flexivel para usar a função align-items */
+    /*align-items: center/* define o espaço entre os itens (centralziado) */
+
+}
+main{/*Efeitos na caixa principal */
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    color: green
+
+}
+footer{/*efeitos no rodapé */
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    color: white
+}
+*{/* O asterisco indica que todos os campos seram afetados pelo comando */
+    margin: 0px auto;/* define o espaço das margens em pixel */
+}
+
+div.submenu{
+    display: none; /*oculta o sub menu div*/
+    position:absolute; /*abre o submenu sem expandir o container nav*/
+    background-color: grey;
+    font-family: 'Pacifico', cursive;
+
+}
+
+div.menu:hover div.submenu{
+    display: block; /*Exibe o item que esta oculto quando passar o mouse por cima*/
+}
+
+div.submenu a {
+    display:block; /*Mostra os links um embaixo do outro*/
+    color:black;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size:20px;
+    box-shadow:8px 8px 10px 5px rgba(0,0,0,0.7)
+}
+
+div.submenu a:hover{
+    background-color:blueviolet;
+    font-size:20px;
+
+}
+
+button.botao{
+    background-color: #333333;
+    color: white;
+    border:none;
+    font-weight:bold;
+}
+
+button.botao, div.submenu{
+    min-width: 120px;
+    font-size:20px;
+}
+
+div.menu{
+    display: inline-block;
+}
+main iframe{
+    width:100%;
+    height:100%;
+    border:0px;        
+}
